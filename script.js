@@ -24,3 +24,18 @@ let message = "Cтудент " + user.first_name + " " + user.last_name + " уч
 console.log(property)
 console.log(message);
 console.log('\n')
+
+/* Задание 2 */
+console.log("Задание 2"); 
+let arr = [1, 2, 3, 4, 5]; 
+let len = arr.length;
+for (let i = 0; i < len; i++) {
+    let lastItem = arr.pop();
+    if (i!=len-1) {
+        console.log(lastItem+ " осталось ["+arr+"]")
+    }
+    else {
+        console.log(lastItem)
+    }
+}   
+console.log('\n')
