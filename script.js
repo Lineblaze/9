@@ -58,3 +58,26 @@ else {
 }
 }
 console.log('\n')
+
+/* Задание 4 */
+console.log("Задание 4"); 
+const matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+const multMatrix = (m, mat) => {
+let x = mat[0].length;   
+let y = mat[0][0].length;
+for(let row of mat) {
+    for(let n in row) {
+        row[n] *= m;            
+    }
+}
+console.log('Матрица, умноженная на ', m);
+for(let row of mat) {
+    console.log(row.join(', '));
+}
+}
+multMatrix(10, matrix);
+console.log('\n')
