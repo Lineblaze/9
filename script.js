@@ -39,3 +39,22 @@ for (let i = 0; i < len; i++) {
     }
 }   
 console.log('\n')
+
+/* Задание 3 */
+console.log("Задание 3"); 
+palindrome(prompt("Введите слово"))
+function palindrome(word) {
+let arr = [];
+arr = word.split('');
+let arr_cont = "";
+for (let i = arr.length - 1; i >= 0; i--) {
+    arr_cont = arr_cont + arr[i];
+}
+if (arr_cont == word) {
+    console.log("True");
+}
+else {
+    console.log("False");
+}
+}
+console.log('\n')
